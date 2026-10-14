@@ -1,0 +1,31 @@
+# 忽略本地凭证与临时产物
+# MCP Token 绝不入库。
+
+.mcp.env
+*.token
+.env
+.env.local
+
+# 每期节目产物只在本地保留，不入库。
+# 节目正文含当期真实券包、积分与门店快照，属于个人数据；仓库只分发「生成能力」。
+# 需要公开的实测样本请脱敏后放 fixtures/（见 scripts/sanitize_fixtures.py）。
+episodes/
+
+# 商品名称缓存（按门店缓存，属本机数据）
+cache/
+
+# TTS 合成的中间产物（正常情况下会自动删除，这里再兜一层）
+*.raw.aiff
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/
+*.swp

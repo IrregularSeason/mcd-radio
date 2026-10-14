@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "code": 200,
+  "message": "请求成功",
+  "datetime": "2026-10-14 14:21:59",
+  "traceId": "REDACTED",
+  "data": {
+    "productOriginalPrice": 1350,
+    "productPrice": 1350,
+    "originalPrice": 1350,
+    "discount": 0,
+    "price": 1350,
+    "productList": [
+      {
+        "productCode": "4810",
+        "productName": "中薯条",
+        "quantity": 1,
+        "originalSubtotal": 1350,
+        "subtotal": 1350
+      }
+    ],
+    "takeWayList": [
+      {
+        "code": "eat-in",
+        "title": "堂食",
+        "subtitle": "店内用餐"
+      },
+      {
+        "code": "locker-out",
+        "title": "外带",
+        "subtitle": "店外取餐柜"
+      }
+    ]
+  }
+}
